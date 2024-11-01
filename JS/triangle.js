@@ -5,12 +5,12 @@ function CalculateTriangleAria() {
     const base = parseFloat(triangleBaseText);
 
     // Get and Set Triangle Height!
-    const triangleHightInput = document.getElementById("triangle-hight");
+    const triangleHightInput = document.getElementById("triangle-height");
     const triangleHightText = triangleHightInput.value;
-    const hight = parseFloat(triangleHightText);
+    const height = parseFloat(triangleHightText);
 
     // Calculate Triangle Aria!
-    const TriangleAria = 0.5 * base * hight;
+    const TriangleAria = 0.5 * base * height;
 
     // Display Triangle Aria!
     const triangleAria = document.getElementById("triangle-aria");
@@ -37,3 +37,25 @@ function CalculateRectangleAria() {
     const rectangleAria = document.getElementById("rectangle-aria");
     rectangleAria.innerText = RectangleAria;
 }
+
+
+
+function CalculateParallelogramAria() {
+    // Get and Set Parallelogram Base!
+    const parallelogramBaseInput = document.getElementById("parallelogram-base");
+    const parallelogramBaseText = parallelogramBaseInput.value;
+    const base = parseFloat(parallelogramBaseText);
+
+    // Get and Set Parallelogram Height!
+    const parallelogramHightInput = document.getElementById("parallelogram-height");
+    const parallelogramHightText = parallelogramHightInput.value;
+    const height = parseFloat(parallelogramHightText);
+
+    // Calculate Parallelogram Aria!
+    const ParallelogramAria = base * height;
+
+    // Display Parallelogram Aria!
+    const parallelogramAria = document.getElementById("parallelogram-aria");
+    parallelogramAria.innerText = ParallelogramAria;
+}
+

@@ -27,7 +27,7 @@
                             <input id="triangle-base" class="text-2xl rounded-md w-28 p-2" type="number"
                                 placeholder="b">
                             <span>cm</span>
-                            <input id="triangle-hight" class="text-2xl rounded-md w-28 p-2 ml-4" type="number"
+                            <input id="triangle-height" class="text-2xl rounded-md w-28 p-2 ml-4" type="number"
                                 placeholder="h">
                             <span>cm</span>
                         </div>
@@ -64,16 +64,19 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Parallelogram</h2>
-                        <p>Area (A) = 0.5 x b x h</p>
+                        <p>Area (A) = b x h</p>
                         <div>
-                            <input class="text-2xl rounded-md w-28 p-2" type="number" placeholder="b">
+                            <input id="parallelogram-base" class="text-2xl rounded-md w-28 p-2" type="number"
+                                placeholder="b">
                             <span>cm</span>
-                            <input class="text-2xl rounded-md w-28 p-2 ml-4" type="number" placeholder="h">
+                            <input id="parallelogram-height" class="text-2xl rounded-md w-28 p-2 ml-4" type="number"
+                                placeholder="h">
                             <span>cm</span>
                         </div>
-                        <span>Area: <span id="triangle-aria">0</span>cm<sup>2</sup></span>
+                        <span>Area: <span id="parallelogram-aria">0</span>cm<sup>2</sup></span>
                         <div class="card-actions w-full mt-4">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="CalculateParallelogramAria()"
+                                class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
